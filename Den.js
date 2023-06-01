@@ -121,4 +121,5 @@ let currentPassword = 898;
 let message = (password === currentPassword) && 'Пароль верный' || 'Пароль НЕ верный!';
 console.log(message);
 
+//
 
