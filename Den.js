@@ -117,8 +117,8 @@ for (const prop in obj) {
 
  //Запись проверки кода оператор && - возможно использовать тернарник и так проще но решил попробовать этот способ  
 const password = 555;
-let enterinPassword = 898;
-let massage = (password === enterinPassword) && 'Пароль верный' || 'Пароль НЕ верный!';
-console.log(massage);
+let currentPassword = 898;
+let message = (password === currentPassword) && 'Пароль верный' || 'Пароль НЕ верный!';
+console.log(message);
 
 
