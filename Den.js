@@ -110,6 +110,15 @@ const { prop1, prop2, ...rest } = obj;
 onst obj = { prop1: value1, prop2: value2, ..., prop100: value100 };
 
 for (const prop in obj) {
-  // Доступ к каждому свойству объекта
+  // Доступ к каждому свойству объекта  
   console.log(prop, obj[prop]);
-}
+  }
+
+
+ //Запись проверки кода оператор && - возможно использовать тернарник и так проще но решил попробовать этот способ  
+const password = 555;
+let enterinPassword = 898;
+let massage = (password === enterinPassword) && 'Пароль верный' || 'Пароль НЕ верный!';
+console.log(massage);
+
+
