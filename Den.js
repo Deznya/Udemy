@@ -217,3 +217,19 @@ function countdown(n) {
 }
 
 console.log(countdown(5)); // Массив в правильном порядке
+
+function rangeOfNumbers(startNum, endNum) {
+  if (startNum <= endNum) {
+  return [];  
+  } else {
+
+const arr = rangeOfNumbers(startNum,endNum)
+arr.push(startNum,endNum);
+return arr
+  } 
+}
+console.log(rangeOfNumbers(4, 4))
+
+
+
+
