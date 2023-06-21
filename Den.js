@@ -230,6 +230,14 @@ return arr
 }
 console.log(rangeOfNumbers(4, 4))
 
+unction range(start, end) {
+	if (start === end) {
+		return [start];
+	} else { (start <= end)
+    return [start].concat(range(start + 1, end));
+  }
+}
 
+console.log(range(4,4))
 
 
