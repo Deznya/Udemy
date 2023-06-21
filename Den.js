@@ -192,15 +192,28 @@ console.log(lookUpProfile('Akira', 'likes'))
 // console.log('Сумма зарплат работников возрастом 30 и более лет:', totalSalary);
 
 
+// Рекурсия
 
+function countdown(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countdown(n - 1);
+    countArray.unshift(n);
+    return countArray;
+  }
+}
 
+console.log(countdown(5)); // Массив в обратном порядке
 
+function countdown(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countdown(n - 1);
+    countArray.push(n);
+    return countArray;
+  }
+}
 
-
-
-
-
-
-
-//
-
+console.log(countdown(5)); // Массив в правильном порядке
